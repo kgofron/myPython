@@ -1,0 +1,1 @@
+# Write a method 'average_of_three(num1, )'
