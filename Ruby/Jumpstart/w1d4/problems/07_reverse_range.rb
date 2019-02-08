@@ -3,7 +3,16 @@
 # The min and max should be excluded from the array
 
 def reverse_range(min, max)
+    range = []
 
+    i = max - 1
+    while i > min
+        range << i
+
+        i -= 1
+    end
+    
+    return range
 end
 
 print reverse_range(10, 17) # => [16, 15, 14, 13, 12, 11]

@@ -2,7 +2,15 @@
 # The function should return an array containing all numbers from min to max inclusive.
 
 def range(min, max)
+    num_range = []
 
+    i = min
+    while i <= max
+        num_range << i
+
+        i += 1
+    end
+    return num_range
 end
 
 print range(2, 7)   # => [2, 3, 4, 5, 6, 7]

@@ -3,10 +3,20 @@
 def yell(words)
   i = 0
   out_str = []
+  yelled_words = []
+  
   while i < words.length
     out_str[i] = words[i] + "!"
     i += 1
   end
+
+#   i = 0
+#   while i < words.length
+#     new_word = words[i] + '!'
+#     yelled_words << new_word
+
+#     i += 1
+#   end
   
   return out_str
 

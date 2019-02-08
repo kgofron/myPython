@@ -2,7 +2,18 @@
 # The method should return an array containing all odd numbers from min to max (inclusive).
 
 def odd_range(min, max)
+    range = []
 
+    i = min
+    while i <= max
+
+        if i % 2 == 1
+            range << i
+        end
+
+        i += 1
+    end
+    return range
 end
 
 print odd_range(11, 18) # => [11, 13, 15, 17]

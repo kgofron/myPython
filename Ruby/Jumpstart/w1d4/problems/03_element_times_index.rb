@@ -2,7 +2,16 @@
 # every number of the original array multiplied with its index.
 
 def element_times_index(numbers)
+    new_nums = []
 
+    i = 0
+    while i < numbers.length
+        new_nums << i * numbers[i]
+        
+        i += 1
+    end
+
+    return new_nums
 end
 
 print element_times_index([4, 7, 6, 5])       # => [0, 7, 12, 15]

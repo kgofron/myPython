@@ -16,3 +16,12 @@ end
 puts reverse("cat")          # => "tac"
 puts reverse("programming")  # => "gnimmargorp"
 puts reverse("bootcamp")     # => "pmactoob"
+
+p reverse("cat")          # => "tac"
+p reverse("programming")  # => "gnimmargorp"
+p reverse("bootcamp")     # => "pmactoob"
+
+print reverse("cat")          # => "tac"
+print reverse("programming")  # => "gnimmargorp"
+print reverse("bootcamp")     # => "pmactoob"
+puts ""

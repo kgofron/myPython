@@ -3,6 +3,13 @@
 
 def is_palindrome(word)
     word_len = word.length
+    # reversed = ""
+    # i = 0
+    # while i < word.length
+    #   reversed = word[i] + reversed
+    #   i += 1
+    # end
+    # return reversed == word
 
     i = 0
     while i < word_len / 2

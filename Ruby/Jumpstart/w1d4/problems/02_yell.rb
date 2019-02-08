@@ -2,7 +2,15 @@
 # new array where every word from the original array has an exclamation point after it.
 
 def yell(words)
+    new_words = []
 
+    i = 0
+    while i < words.length
+        new_words << words[i] + "!"
+
+        i += 1
+    end
+    return new_words
 end
 
 print yell(["hello", "world"]) # => ["hello!", "world!"]
