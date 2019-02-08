@@ -3,12 +3,14 @@
 
 def count_vowels(word)
     count = 0
+    vowels = 'aeiou'
 
     i = 0
     while i < word.length
         char = word[i]
 
-        if char == 'a' || char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u'
+        if vowels.include?(word[i])
+ #       if char == 'a' || char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u'
             count += 1
         end
 
