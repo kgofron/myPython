@@ -18,16 +18,23 @@ months = ["Jan", "Feb" , "Mar", "Apr"]
 
 months.each { |month|  puts month }
 
-months.each do |ele| 
-    puts ele
-    puts "___"
-end
+# months.each do |ele| 
+#     puts ele
+#     puts "___"
+# end
 
 # months.each_with_index do |month, idx|
 #     puts month
 #     puts idx
 #     puts "___"
 # end
+
+
+months.each.with_index do |month, idx|
+    puts month
+    puts idx
+    puts "___================="
+end
 
 # String,
 sentence = "hello world"

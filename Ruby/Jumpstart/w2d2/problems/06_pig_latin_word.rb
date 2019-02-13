@@ -5,7 +5,15 @@
 # - for words that start with a nonvowel, move all letters before the first vowel to the end of the word and add 'ay'
 
 def pig_latin_word(word)
+    vowels = "aeiou"
+    pig_word = ""
+    if vowels.include?word[0]
+        pig_word =word + "yay"        
+    elsif 
+        pig_word = word.pop
+    end
 
+    return pig_word
 end
 
 puts pig_latin_word("apple")   # => "appleyay"

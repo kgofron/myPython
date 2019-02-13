@@ -2,7 +2,15 @@
 # Note that we need to reverse the order of characters in the words, do not reverse the order of words in the sentence.
 
 def reverse_words(sent)
+    rev_array = []
 
+    arr = sent.split(" ")
+    arr.each do |word| 
+        rev_array << word.reverse
+    end
+    # arr.each { |word| rev_array << word.reverse } # compact form
+
+    return rev_array.join(" ")
 end
 
 puts reverse_words('keep coding') # => 'peek gnidoc'

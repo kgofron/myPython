@@ -2,7 +2,13 @@
 # the method should return a 2D array representing all possible combinations of 2 elements of the array.
 
 def combinations(arr)
-
+    twoD_arr=[]
+    arr.each_with_index do |el1, idx1|
+        arr.slice(idx1+1..-1).each_with_index do |el2, idx2|
+            twoD_arr += [[el1,el2]]
+        end
+    end
+    return twoD_arr
 end
 
 print combinations(["a", "b", "c"]); # => [ [ "a", "b" ], [ "a", "c" ], [ "b", "c" ] ]
