@@ -7,10 +7,15 @@
 def pig_latin_word(word)
     vowels = "aeiou"
     pig_word = ""
+
     if vowels.include?word[0]
-        pig_word =word + "yay"        
-    elsif 
-        pig_word = word.pop
+        return word + "yay"       
+    end
+    word.each_char.with_index do |char, idx|
+        if vowels.include?(char)
+            pig_word = word[0...idx]
+            return word[idx..-1] + pig_word + "ay"
+        end
     end
 
     return pig_word

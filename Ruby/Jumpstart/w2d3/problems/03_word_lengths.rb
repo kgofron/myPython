@@ -2,7 +2,12 @@
 # and its' corresponding value is the length of that word.
 
 def word_lengths(sentence)
-
+    my_hash = {}
+    arr = sentence.split(" ")
+    arr.each do |word|
+        my_hash[word] = word.length
+    end
+    return my_hash
 end
 
 puts word_lengths("this is fun") #=> {"this"=>4, "is"=>2, "fun"=>3}
